@@ -37,8 +37,10 @@ makeCacheMatrix <- function(x = matrix()) {
     ## calculating - note: we do not check to see if it a real inverse
     ## Perhaps the actual calc and setting shoud be done together here...
     setinverse <- function(inv) minverse <<- inv
+    
     ## Function to access the inverse matrix stored here
     getinverse <- function() minverse
+    
     ## The last statement returns list of functions giving access to the 
     ## variables here
     list(set = set, get = get,
